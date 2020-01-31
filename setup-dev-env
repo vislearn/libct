@@ -1,0 +1,30 @@
+#!/bin/bash
+set -eu -o pipefail
+
+temp_dir=$(mktemp -d)
+trap 'rm -rf "${temp_dir}"' EXIT
+
+source_dir=$(pwd)
+build_dir="${temp_dir}/build"
+install_dir="${temp_dir}/root"
+
+meson --prefix="${install_dir}" "${build_dir}"
+
+cd "${build_dir}"
+ninja && ninja install || true
+
+export PATH="${install_dir}/bin${PATH:+:${PATH}}"
+for directory in "${install_dir}"/lib/python*/*-packages; do
+	export PYTHONPATH="${directory}${PYTHONPATH:+:${PYTHONPATH}}"
+done
+
+echo
+echo "+==============================================================================+"
+echo "| WARNING: Debug mode is enabled and the execution will be SLOW!               |"
+echo "| For a faster build run the following commands:                               |"
+echo "|   - meson configure --buildtype release                                      |"
+echo "|   - export PYTHONOPTIMIZE=1                                                  |"
+echo "+==============================================================================+"
+echo
+
+${SHELL}

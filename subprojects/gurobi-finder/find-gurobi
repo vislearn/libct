@@ -1,0 +1,7 @@
+#!/bin/bash
+set -eu -o pipefail
+
+echo "${GUROBI_HOME}"/include
+echo "${GUROBI_HOME}"/lib
+printf '%s\n' "${GUROBI_HOME}"/lib/libgurobi*.so | sed -rne 's|^.*/lib(gurobi[0-9]+)\.so$|\1|p' | tail -n1
+printf '%s\n' "${GUROBI_HOME}"/lib/libgurobi_g++*.a | sed -rne 's|^.*/lib(gurobi_g\+\+.+)\.a$|\1|p' | tail -n1
