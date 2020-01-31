@@ -11,14 +11,16 @@ include_dir = include_directories('include')
 libct_static = static_library(
   'ct', 'lib/ct.cpp',
   include_directories: include_dir,
-  dependencies: [gurobi])
+  dependencies: [gurobi],
+  install: true)
 
 libct_shared = shared_library(
   'ct', 'lib/ct.cpp',
   include_directories: include_dir,
   version: meson.project_version(),
   soversion: '0',
-  dependencies: [gurobi])
+  dependencies: [gurobi],
+  install: true)
 
 libct_py = custom_target('libct_py',
   input: ['swig/ct.i', 'include/ct.h'],
