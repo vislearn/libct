@@ -20,13 +20,20 @@ To cite our this work please use:
 > \[[pdf][AISTATS2020]\]
 
 ```bibtex
-@InProceedings{pmlr-haller20,
-  title     = {A Primal-Dual Solver for Large-Scale Tracking-by-Assignment},
-  author    = {Haller, Stefan  and  Prakash, Mangal  and  Hutschenreiter, Lisa  and  Pietzsch, Tobias  and  Rother, Carsten  and  Swoboda, Paul  and  Savchynskyy, Bogdan},
-  booktitle = {Proceedings of Machine Learning Research},
-  year      = {2020},
-  series    = {Proceedings of Machine Learning Research},
-  publisher = {PMLR},
+@InProceedings{haller20,
+  title =        {A Primal-Dual Solver for Large-Scale Tracking-by-Assignment},
+  author =       {Haller, Stefan and Prakash, Mangal and Hutschenreiter, Lisa and Pietzsch, Tobias and Rother, Carsten and Jug, Florian and Swoboda, Paul and Savchynskyy, Bogdan},
+  booktitle =    {Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics},
+  pages =        {2539--2549},
+  year =         {2020},
+  editor =       {Chiappa, Silvia and Calandra, Roberto},
+  volume =       {108},
+  series =       {Proceedings of Machine Learning Research},
+  address =      {Online},
+  month =        {26--28 Aug},
+  publisher =    {PMLR},
+  pdf =          {http://proceedings.mlr.press/v108/haller20a/haller20a.pdf},
+  url =          {http://proceedings.mlr.press/v108/haller20a.html},
 }
 ```
 
