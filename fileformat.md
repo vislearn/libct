@@ -4,6 +4,8 @@ The format of the processed input file is a simple text representation of the tr
 Empty lines are ignored.
 Each line starts with an identifier that specifies how the rest of the line is interpreted.
 
+The model files that have been used for the AISTATS 2020 submission can be found [here][AISTATS2020 Dataset].
+
 ### Comments
 
 If a line starts with an `#` the remainder of the line is ignored.
@@ -38,3 +40,6 @@ Format for Movement:<br/>
 
 Format for Movement:<br/>
 `DIV $unique_event_id $segmentation_id_left $segmentation_id_right1 $segmentation_id_right2 $cost`
+
+
+[AISTATS2020 Dataset]: https://hci.iwr.uni-heidelberg.de/vislearn/HTML/people/stefan_haller/datasets/aistats2020_cell_tracking.tar.xz

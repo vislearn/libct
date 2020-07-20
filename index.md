@@ -58,7 +58,8 @@ Additional information to various aspects of our implementation are available he
 
 <img src="{{ '/assets/imgs/drosophila.png' | relative_url }}" alt="Drosophila Melanogaster (Common Fruit Fly) Nucleus Tracking Dataset" class="teaser-img"/>
 
-We will make datasets and the generated model files that have been used for preparation of our AISTATS 2020 submission available here in the near future.
+The generated model files that have been used for preparation of our AISTATS2020 2020 submissions are available here: [AISTATS 2020 Models][AISTATS2020 Dataset]
 
 
 [AISTATS2020]: https://hci.iwr.uni-heidelberg.de/vislearn/HTML/people/stefan_haller/pdf/A%20Primal-Dual%20Solver%20for%20Large-Scale%20Tracking-by-Assignment%20-%20AISTATS2020.pdf
+[AISTATS2020 Dataset]: https://hci.iwr.uni-heidelberg.de/vislearn/HTML/people/stefan_haller/datasets/aistats2020_cell_tracking.tar.xz
